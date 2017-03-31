@@ -13,15 +13,15 @@ Status: 200 OK
 ```
 [
   {
-		"id": 1,
-		"name": "Math",
-		"teacher_name": "teacher_1"
-		},
+    "id": 1,
+    "name": "Math",
+    "teacher_name": "teacher_1"
+  },
   {
-		"id": 2,
-		"name": "Chinese",
-		"teacher_name": "teacher_1"
-	}
+    "id": 2,
+    "name": "Chinese",
+    "teacher_name": "teacher_1"
+  }
 ]
 ```
 ### List teachers
@@ -41,21 +41,21 @@ Status: 200 OK
 
 ```
 [
-	{
-		"id": 1,
-		"name": "teacher_1",
-	    "courses": [
-		    {
-		      "id": 1,
-		      "name": "Math"
-		    },
-		    {
-		      "id": 2,
-		      "name": "Chinese"
-	      }
-      ],
-  }
-  ...
+  {
+    "id": 1,
+    "name": "teacher_1",
+    "courses": [
+      {
+        "id": 1,
+        "name": "Math"
+      },
+      {
+        "id": 2,
+        "name": "Chinese"
+      }
+     ],
+   }
+	...
 ]
 
 ```

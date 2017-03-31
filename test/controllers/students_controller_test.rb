@@ -12,12 +12,12 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
   	student = Student.create name: 'stu1'
   	student.courses << course
   	expect = [
-  		{
-	  		"id"=> student.id, 
-	  		"name"=> course.name, 
-	  		"teacher_name"=> teacher.name
-  	  }
-  	]
+      {
+      	"id"=> student.id, 
+        "name"=> course.name, 
+        "teacher_name"=> teacher.name
+      }
+    ]
 
   	get student_url(id: student.id)
   	assert_response :success
